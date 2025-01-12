@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shoulder Press</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1f36;
+      color: #ffffff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; /* Push the button to the bottom */
+      min-height: 100vh;
+    }
+
+    h1 {
+      margin-top: 20px;
+      color: #4dabf7;
+    }
+
+    .video-container {
+      margin-top: 30px;
+    }
+
+    .video-feed {
+      width: 80%;
+      border-radius: 10px;
+      border: 2px solid #4dabf7;
+    }
+
+    .back-link {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #4dabf7;
+      background-color: transparent;
+      border: 2px solid #4dabf7;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      margin-bottom: 20px; /* Add space above the bottom */
+    }
+
+    .back-link:hover {
+      background-color: #4dabf7;
+      color: #1a1f36;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shoulder Press</h1>
+  <p>Perform shoulder presses and track your reps below:</p>
+  <div class="video-container">
+    <img src="{{ url_for('bicep_curl_feed') }}" width="640" height="480" alt="Video Feed">
+  </div>
+  <a href="/pull" class="back-link">Back to Pull Exercises</a>
+</body>
+</html>

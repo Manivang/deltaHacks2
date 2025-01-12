@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Basic -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Workout App</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1f36;
+      color: #ffffff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      padding: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 50px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #a0a0a0;
+    }
+
+    .btn-container {
+      margin-top: 20px;
+    }
+
+    .btn {
+      font-size: 1.5rem; /* Increased button size */
+      font-weight: bold;
+      color: #4dabf7;
+      background: transparent;
+      border: 2px solid #4dabf7;
+      padding: 15px 30px; /* Increased padding for bigger buttons */
+      margin: 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #4dabf7;
+      color: #1a1f36;
+    }
+
+    .footer {
+      margin-top: auto; /* Pushes footer to the bottom */
+      padding: 20px 0;
+      font-size: 0.9rem;
+    }
+
+    .footer p {
+      margin-bottom: 10px;
+    }
+
+    .footer .btn-container {
+      margin-top: 20px;
+    }
+
+    .footer .btn {
+      font-size: 1rem;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="navbar">Workout App</div>
+
+  <!-- Main Section -->
+  <h1>Choose Your Workout</h1>
+  <p>Select a muscle group to start your workout</p>
+  <div class="btn-container">
+    <a href="/push" class="btn">Push</a>
+    <a href="/pull" class="btn">Pull</a>
+    <a href="/leg" class="btn">Leg</a>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="footer">
+    <p>Quick Links</p>
+    <div class="btn-container">
+      <a href="/about" class="btn">About Us</a>
+      <a href="/contact" class="btn">Contact Us</a>
+      <a href="/library" class="btn">Library Use</a>
+    </div>
+    <p>&copy; All Rights Reserved by Workout App</p>
+  </div>
+</body>
+
+</html>
